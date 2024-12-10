@@ -7,5 +7,5 @@ The repository is for my reference of numpy and pandas
 
 ### Quick references for numpy
 
-`axis = 1 #row`
-`axis = 0 # column`
+- `axis = 1 #row`
+- `axis = 0 # column`
