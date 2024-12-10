@@ -11,6 +11,7 @@
 - `a.itemsize`
 - `a.nbytes`
 - `np.ones`
+- *rng = np.random.default_rng(seed=42)*
 - `np.zeros`
 - `np.random.seed(42)`
 - `np.random.rand(4,5)`
@@ -31,7 +32,9 @@
 - `np.vstack((a,b,c..)) # cols must be same`
 - `np.hsplit(a,<no.of splits>)`
 - `np.vsplit(a,<no.of splits>)`
+- `np.isnan(a)`
 
 # [Part 2](numpy_2_slicing.ipynb)
 
-*Contains indexing and slicing of numpy arrays*
+- *Contains indexing and slicing of numpy arrays*
+- *Broadcatsing*
