@@ -16,3 +16,8 @@ The repository is for my reference of python packages like numpy and pandas
 
 ## Pandas
 [Pandas Functions](pandas/functions.md)
+
+### Quick references pandas
+
+- `axis = 1 #row`
+- `axis = 0 # column`

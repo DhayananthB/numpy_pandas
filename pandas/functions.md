@@ -48,3 +48,37 @@
 - `vk[vk.isin([49,99])]`
 - `vk.apply(lambda x:x-1)`
 - `vk = vk.copy()`
+
+## [Pandas DataFrame](p_df/p2.ipynb)
+
+- `pd.DataFrame(data,columns=['sno','a'])`
+- `stud = pd.DataFrame(dict)`
+- `stud.set_index('sno',inplace=True)`
+- `ipl = pd.read_csv('movies.csv)`
+- `ipl.shape`
+- `ipl.size` -> returns rows x columns
+- `ipl.dtypes`
+- `ipl.index`
+- `ipl.values`
+- `ipl.columns`
+- `ipl.info()`
+- `ipl.describe()`
+- `ipl.isnull()`
+- `ipl.duplicated()`
+- `stud.rename(columns={'marks':'pct','package':'lpa'},inplace=True)`
+- ### `stud.sum()` *default column(axis=0)*
+- `stud.mean()`
+- `ipl.mean(numeric_only=True)`
+- `stud[['iq','lpa']]`
+- `stud.iloc[2] # using index position`
+- `stud.iloc[0:2,0:2]`
+- `stud.loc['I':"IV",'iq':'lpa'] #using labels`
+- `stud.loc[['I',"III"],['lpa','iq']]`
+- `movies[movies['genres'].str.contains('Action')].shape[0]`
+
+- *`mask1 = ((ipl['Team1'] == t1) & (ipl['Team2']==t2)) | ((ipl['Team1']==t2) & (ipl['Team2']==t1))`*
+- *`total_matches = ipl[mask1].shape[0]`*
+  
+- `movies.dropna(inplace=True)`
+- `movies['actors'].str.split('|').apply(lambda x:x[0])`
+- `ipl["ID"] = ipl['ID'].astype('int8')`
