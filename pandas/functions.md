@@ -1,0 +1,50 @@
+## [Pandas Series](p_series/p1.ipynb)
+
+- `import pandas as pd`
+- `s = pd.Series(<list> , index = <index> , name = <name>)`
+- `s = pd.Series(<dictionary> , name =<name> )`
+- `s.size`
+- `s.dtype`
+- `s.name`
+- `s.is_unique`
+- `s.index`
+- `s.values`
+- `subs = pd.read_csc('subs.csv').squeeze()`
+- `vk = pd.read_csv('vk.csv',index_col='mactc_no')`
+- `vk.head(<n>)`
+- `vk.taile(<n>)`
+- `vk.sampple(<n>)`
+- `vk.value_counts()`
+- `vk.sort_values(ascending = <False|True>)`
+- `vk.sort_index()`
+- `vk.count()` *neglect the np.nan*
+- `vk.sum() / vk.mean()....`
+- `vk.describe()`
+- `vk.max()`
+- `vk[-1,1]`
+- `vk[[1,5,6]]`
+- `vk[5:8]`
+- `vk[-5]`
+- `vk[::25]`
+- `vk['hello']`
+- `vk[1:3]=[100,100]`
+- `vk[[1,2,7]]=[100,100,90]`
+- `len(subs)`
+- `type(subs)`
+- `dir(subs)`
+- `sorted(subs)`
+- `min(subs)`
+- `max(subs)`
+- `vk[vk==0].size`
+- `movies.value_counts().head(10).plot(kind='pie')`
+- `vk.astype('int16)`
+- `vk[vk.between(12,33)]`
+- `vk.clip(40,90)`
+- `temp.duplicated()`
+- `temp.drop_duplicates()`
+- `temp.drop_duplicates(keep='last')`
+- `temp.dropna()`
+- `temp.fillna(987)`
+- `vk[vk.isin([49,99])]`
+- `vk.apply(lambda x:x-1)`
+- `vk = vk.copy()`
