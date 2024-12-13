@@ -54,6 +54,7 @@
 - `pd.DataFrame(data,columns=['sno','a'])`
 - `stud = pd.DataFrame(dict)`
 - `stud.set_index('sno',inplace=True)`
+- `stud.reset_index(inplace=True)`
 - `ipl = pd.read_csv('movies.csv)`
 - `ipl.shape`
 - `ipl.size` -> returns rows x columns
@@ -82,3 +83,25 @@
 - `movies.dropna(inplace=True)`
 - `movies['actors'].str.split('|').apply(lambda x:x[0])`
 - `ipl["ID"] = ipl['ID'].astype('int8')`
+- `ipl[~ipl['MatchNumber'].str.isdigit()]['Player_of_Match'].value_counts()`
+- `s.sort_values('name',na_position='first',ascending=False, inplace=True)`
+- `s.sort_values(['name','college'],ascending=[True,False])`
+- `b['batsman_run'].rank(ascending=False)`
+- `ipl.nunique()`
+- `ipl['Season'].nunique()`
+- `s[s['name'].notnull()]['name']`
+- `s[s['name'].isnull()]['name']`
+  
+- `s.dropna(how='any' | 'all' )`
+- `s.dropna(subset=['name','college'])`
+- `s['cgpa'] = s['cgpa'].fillna(s['cgpa'].mean())`
+- `s.duplicated().sum()`
+- `s.drop_duplicates(keep='last')`
+
+- def increment(s):
+-    return s+1
+
+- `s['package'] = s['package'].apply(increment)`
+- `s.drop(columns=['name','branch'])`
+- `s.drop(index=[4,10])`
+- `s.corr(numeric_only=True)`
